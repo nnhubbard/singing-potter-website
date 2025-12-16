@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Singing Potter | Handcrafted Pottery with Heart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <img src="singing-potter-logo.png" alt="The Singing Potter Logo" class="logo">
+                <p class="tagline">Where clay meets melody</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About</h2>
+                <div class="about-content">
+                    <p class="lead">Every piece tells a story, shaped by hands that hum with joy.</p>
+                    <p>The Singing Potter was born from a simple truth: creativity flows best when the heart is full of song. Each piece of pottery crafted here carries the warmth of handmade artistry and the rhythm of music woven into its very clay.</p>
+                    <p>From functional vessels that grace your daily rituals to sculptural pieces that inspire wonder, every creation emerges from the wheel accompanied by melody, making each one truly unique.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span>Vases</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span>Bowls</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span>Mugs</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span>Sculptures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process">
+            <div class="container">
+                <h2>The Process</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <h3>Centering</h3>
+                        <p>Each piece begins with a song and a lump of clay, centered on the wheel with patience and intention.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <h3>Shaping</h3>
+                        <p>As melodies fill the studio, hands guide the clay upward, coaxing form from formlessness.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <h3>Refining</h3>
+                        <p>Details emerge through trimming and carving, each mark a note in the visual symphony.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">04</div>
+                        <h3>Firing</h3>
+                        <p>The kiln transforms fragile clay into enduring ceramic, sealing the song within.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p class="contact-intro">Interested in a custom piece or have questions? I'd love to hear from you.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The Singing Potter. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav-toggle').checked = false;
+            });
+        });
+    </script>
+</body>
+</html>
