@@ -104,7 +104,7 @@
             <div class="container">
                 <h2>Get in Touch</h2>
                 <p class="contact-intro">Interested in a custom piece or have questions? I'd love to hear from you.</p>
-                <form class="contact-form">
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -118,6 +118,7 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit">Send Message</button>
+                    <p class="form-status"></p>
                 </form>
             </div>
         </section>
@@ -128,13 +129,6 @@
             <p>&copy; 2025 The Singing Potter. All rights reserved.</p>
         </div>
     </footer>
-    <script>
-        // Close mobile menu when a link is clicked
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('nav-toggle').checked = false;
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
